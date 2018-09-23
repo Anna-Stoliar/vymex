@@ -46,6 +46,14 @@
 	
 <body>
 	<div class="page-wrap">
+		<div class="header-sm">
+			<div class="lang">
+				<a href="#" class="active lang-ru">RU</a>
+				<a href="#" class="lang-en">EN</a>
+			</div>
+			<img src="img/vymex.png" alt="Logo" id="logo" style="width: 50px; height: auto">
+			<div onclick="$('.hidden').css('display', 'flex');"><i class="fas fa-bars"></i></div>
+		</div>
 		<header class="header">
 			<div class="header-menu">
 				<img src="img/vymex.png" alt="Logo" id="logo">
@@ -90,6 +98,21 @@
 				<a href="#" class="main-btn">Узнать больше</a>
 			</div>
 		</main>
+	</div>
+
+	<div class="hidden">
+		<a onclick="$('.hidden').css('display', 'none');">X</a>
+		<div class="auth-sm">
+			<i class="fas fa-user"></i>
+			<a href="#" class="auth-item">Войти</a>
+			<a href="#" class="auth-item">Регистрация</a>
+		</div>
+		<div class="menu-sm">
+			<a href="#" class="menu-itm">Главная</a>
+			<a href="#" class="menu-itm">Продукт</a>
+			<a href="#" class="menu-itm">Блог</a>
+			<a href="#" class="menu-itm">Контакты</a>
+		</div>
 	</div>
 	
 
