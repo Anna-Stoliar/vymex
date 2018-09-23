@@ -2,15 +2,21 @@
 
 /*==========  Desktop First Method  ==========*/
 
-	
+@media only screen and (max-width : 1366px)	
+	/**/
+
 
 
 @media only screen and (max-width : 1250px)
 	/**/
-
-	.main-btns
-		transform: scale(0.8)
-		transition: transform 0.5s ease
+	.main
+		.main-btns
+			height: 200px
+			p
+				&:nth-child(n + 5)
+					display: none
+			.main-btn
+				bottom: 65px
 
 	.header
 		.header-menu
@@ -166,6 +172,15 @@
 
 
 
+@media only screen and (max-width : 700px) and (max-height: 580px)
+	.main
+		.main-text
+			width: 100%!important
+			>div
+				font-size: 17px!important
+		.main-btns
+			margin-top: -30px
+
 
 
 /* Extra Small Devices, Phones */
@@ -208,6 +223,7 @@
 			transform: scale(0.8)
 			.main-btn
 				padding: 20px 55px
+
 
 
 /*==========  Mobile First Method  ==========*/

@@ -55,6 +55,7 @@ body
 	font-size: 16px
 	min-width: 100vw
 	min-height: 100vh
+	max-height: 100vh
 	position: relative
 	line-height: 1.6
 	font-family: "AvenirNextCyrBold", sans-serif
@@ -62,6 +63,9 @@ body
 	color: #3eb4f1
 	background-color: #fff
 	margin: 0
+
+a
+	text-decoration: none
 	
 
 header
@@ -151,13 +155,12 @@ header
 	justify-content: space-between
 	align-items: center
 	width: 100%
-	
 	.header-menu
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
-		font-size: 24px
+		font-size: 20px
 		.menu-itm
 			height: 50px
 			padding: 0 20px
@@ -184,7 +187,7 @@ header
 		font-weight: 600
 		.auth-item
 			color: #000
-			font-size: 22px
+			font-size: 16px
 			padding: 0 10px
 			outline: none!important
 			text-decoration: none
@@ -208,7 +211,7 @@ header
 	color:  #fff!important
 
 .main
-	margin-top: 10vh
+	margin-top: 5vh
 	margin-left: 15px
 	.main-bg
 		.bg-one
@@ -222,7 +225,7 @@ header
 			transition: opacity 0.4s ease
 		.bg-two
 			position: absolute
-			top: 12vw
+			top: 17vh
 			right: 20vw
 			z-index: -1
 			height: auto
@@ -242,8 +245,8 @@ header
 		flex-direction: column
 		justify-content: space-between
 		padding-left: 70px
-		height: 320px
-		width: 490px
+		height: 250px
+		width: 400px
 		position: relative
 		p
 			color: #dadada
