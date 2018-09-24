@@ -2,10 +2,23 @@
 
 /*==========  Desktop First Method  ==========*/
 
-@media only screen and (max-width : 1366px)	
+@media only screen and (max-width : 1450px)	
 	/**/
+	.services
+		.services-icons
+			.icons
+				display: flex
+				flex-direction: row
+				margin-bottom: 10px
+				&:nth-child(2)
+					margin-right: 45px
+				.icons-itm
+					transform: scale(0.8)
+					margin-left: 15px
 
-
+	.materials
+		background-position: 100% 150px
+		background-size: 50% auto
 
 @media only screen and (max-width : 1250px)
 	/**/
@@ -31,6 +44,18 @@
 			.lang
 				font-size: 14px
 
+	.services
+		.services-icons
+			.icons
+				display: flex
+				flex-direction: row
+				margin-bottom: -30px
+				&:nth-child(2)
+					margin-right: 45px
+				.icons-itm
+					transform: scale(0.6)
+					margin-left: -25px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -39,6 +64,53 @@
 						
 
 @media only screen and (max-width : 1150px)
+	/**/
+	
+	.offer
+		img
+			display: none
+		.offer-info
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 90%
+			margin-left: 0%
+
+	.header-p
+		.header-p-mid
+			.header-p-mid-wrap
+				.mid-data
+					display: flex
+					flex-direction:  row
+					align-items: center
+					justify-content: space-between
+					padding: 0
+					margin-bottom: 17vw
+					z-index: 1
+					.mid-data-itm
+						transform: scale(0.7)
+						&:nth-child(2)
+							margin-right: 50px
+							margin-top: -100px
+						>span
+							font-size: 80px
+						>p
+				.mid-info
+					align-items: center
+					justify-content: space-between
+					.mid-info-btn
+						display: flex
+						flex-direction:  column
+						a
+							text-transform: uppercase
+							font-size: 20px
+							&:nth-child(1)
+								margin-bottom: 40px
+							&:nth-child(2)
+								margin-left: 20px
+					.mid-info-mob
+						transform: scale(0.7)
 
 	.main-btns
 		transform: scale(0.7)
@@ -46,10 +118,48 @@
 		margin-left: -50px
 		margin-top: -20px
 
+	.footer-p
+		.footer-p-wrap
+			.footer-p-itm
+				h4
+					font-size: 18px
+				a
+					font-size: 14px
+
+	.services
+		.services-info
+			.services-info-text
+				color: #000
+
+	.materials
+		background-size: contain
+		.materials-info
+			display: flex
+			flex-direction: column
+			justify-content: center
+			margin-top:  100px
+			padding-bottom: 200px
+			img
+				width: 90%
+				height: auto
+			.materials-info-text
+				color: #000
+				padding-left: 0px
+				font-family: "AvenirNextCyrSemiBold", sans-serif
+				width: 80%
+				position: relative
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+
+	.services
+		.services-icons
+			.icons
+				&:nth-child(2)
+					margin-right: 0px
+
 	.header
 		.header-menu
 			font-size: 16px
@@ -71,11 +181,114 @@
 
 @media only screen and (max-width : 850px)
 	/**/
+	.footer-p
+		.footer-p-wrap
+			.footer-p-itm
+				width: 40%
+				margin: 0 2%
+				h4
+					font-size: 22px
+					text-transform: uppercase
+					margin: 10px 0
+				a
+					font-size: 18px
+					margin: 10px 0
+
+	.services
+		.services-icons
+			justify-content: center
+			align-items: center
+			.icons
+				flex-wrap: wrap
+				width: 80%
+				justify-content: center
+				margin-bottom: auto
+				margin-bottom: 20px
+				.icons-itm
+					transform: scale(1)
+					margin-left: 15px
+					margin-bottom: 20px
+
+	.services
+		.services-info
+			justify-content: center
+			.services-info-text
+				width: 90%
+			img
+				display: none
+
 	
+
 
 
 @media only screen and (max-width : 830px)
 	/**/
+
+	.header-p
+		.header-p-mid
+			.header-p-mid-wrap
+				.mid-imgs
+					display: none!important
+				.mid-title
+					margin-bottom: 30px!important
+				.mid-data
+					display: flex
+					flex-direction: row
+					align-items: flex-start!important
+					justify-content: center!important
+					flex-wrap: wrap
+					padding: 0
+					margin-bottom: 30px!important
+					z-index: 1
+					.mid-data-itm
+						width: 250px!important
+						font-size: 20px!important
+						&:nth-child(2)
+							margin-right: 0px!important
+							margin-top: 0px!important
+						>span
+							font-size: 80px!important
+						>p
+							font-size: 28px!important
+				.mid-info
+					width: 100%
+					display: flex
+					flex-direction:  row
+					align-items: center
+					justify-content: center!important
+					text-align: center!important
+					z-index: 1
+					margin-bottom: 80px
+					.mid-info-btn
+						a
+							text-transform: uppercase
+							font-size: 20px
+							&:nth-child(1)
+								margin-right: 0px!important
+					.mid-info-mob
+						display: none!important
+
+
+	.materials
+		.materials-info
+			justify-content: center
+			align-items: center
+			img
+				width: 100%
+				height: auto
+			.materials-info-text
+				width: 100%
+
+	.steps
+		.steps-info
+			margin-left: 0px
+			.step
+				flex-direction: column
+				.step-info
+					width: 80%
+					text-align: center
+					margin-top: 30px
+					margin-left: 0px
 
 	.main
 		.main-bg
@@ -130,6 +343,12 @@
 	.active
 		color: #3eb4f1!important
 
+@media only screen and (max-width : 790px)
+	.services
+		.services-icons
+			.icons
+				&:nth-child(2)
+					display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -179,6 +398,28 @@
 	.header
 		display: none
 
+	.header-sm-p
+		display: flex
+		.fas
+			font-size: 30px
+			margin-right: 20px
+			cursor: pointer
+
+	.header-p-top
+		display: none!important
+
+	.footer-p
+		.footer-p-wrap
+			.footer-p-itm
+				width: 80%
+				margin: 0 5%
+
+	.services
+		.services-icons
+			.icons
+				&:nth-child(1)
+					display: none
+
 
 @media only screen and (max-width : 700px) and (max-height: 580px)
 	.main
@@ -203,11 +444,32 @@
 			img
 				transform: scale(0.5)
 
+	.steps
+		.steps-btn
+			.btn
+				font-size: 24px
+				padding: 17px 70px
+		p
+			margin-left: 40px
+
+	.offer
+		.offer-info
+			a
+				transform: scale(0.8)
+
+
 
 
 @media only screen and (max-width : 450px)
 	/**/
-	
+	.steps
+		.steps-info
+			.step
+				.step-title
+					width: 310px
+					height: 126px
+					font-size: 20px
+
 
 
 /* Custom, iPhone Retina */
