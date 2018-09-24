@@ -1,4 +1,164 @@
 //@import "bourbon"
 
+p
+	margin: 0
+	font-weight: 400
+
+.page-wrap-p
+	margin: 0 5%
+
+.header-p
+	background-color: #3e77ac
+	font-weight: 400
+	font-family: MyriadPro, sans-serif
+	box-shadow: 0px 1px 15px #333
+	.header-p-top
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.top-menu
+			display: flex
+			flex-direction: row
+			align-items: center
+			img
+				margin: 30px 60px 30px 0
+			.top-menu-itm
+				margin-right: 40px
+				font-size: 20px
+		.top-auth
+			display: flex
+			flex-direction: row
+			align-items: center
+			text-transform: uppercase
+			font-family: AvenirNextCyrSemiBold, sans-serif
+			font-weight: 600
+			.top-auth-itm
+				margin: 0 20px
+				font-size: 18px
+				.fas
+					margin-right: 20px
+					font-size: 22px
+			.lang-p
+				margin-left: 60px
+				font-size: 15px
+				a
+					color: #000
+					&:first-child
+						padding-right: 4px
+						border-right: 2px solid #3c3c3c
+	.header-p-mid
+		background-color: #5a9fe0
+		font-family: AvenirNextCyrSemiBold, sans-serif
+		font-weight: 600
+		position: relative
+		color: #fff
+		padding-top: 80px
+		.header-p-mid-wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.mid-circles
+				display: flex
+				align-items: center
+				justify-content: center
+				.mid-circle
+					border:  2px solid #6face4
+					border-radius: 50%
+					position: absolute
+					&:nth-child(1)
+						width: 50vw
+						height: 50vw
+						top: calc(50% - 25vw)
+					&:nth-child(2)
+						width: 45vw
+						height: 45vw
+						top: calc(50% - 22.5vw)
+					&:nth-child(3)
+						width: 40vw
+						height: 40vw
+						top: calc(50% - 20vw)
+					&:nth-child(4)
+						width: 35vw
+						height: 35vw
+						top: calc(50% - 17.5vw)
+					&:nth-child(5)
+						width: 30vw
+						height: 30vw
+						top: calc(50% - 15vw)
+			.mid-imgs
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				.mid-img
+					position: absolute
+					&:nth-child(2)
+						top: calc(50% + 2vw)
+						left: calc(50% + 4vw)
+					&:nth-child(1)
+						left: calc(50% - 27vw)
+						top: calc(50% - 15vw)
+			.mid-title
+				text-align: center
+				display: flex
+				align-items: center
+				justify-content: center
+				font-family: AvenirNextCyrBold, sans-serif
+				font-weight: 700
+				font-size: 34px
+				width: 60vw
+				margin-bottom: 150px
+				z-index: 1
+			.mid-data
+				display: flex
+				flex-direction:  row
+				align-items: center
+				justify-content: space-between
+				padding: 0
+				margin-bottom: 17vw
+				z-index: 1
+				.mid-data-itm
+					width: 30%
+					font-size: 20px
+					&:nth-child(2)
+						margin-right: -60px
+						margin-top: -100px
+					>span
+						font-size: 80px
+					>p
+			.mid-info
+				width: 100%
+				display: flex
+				flex-direction:  row
+				align-items: center
+				justify-content: space-between
+				z-index: 1
+				margin-bottom: 80px
+				.mid-info-btn
+					a
+						text-transform: uppercase
+						font-size: 20px
+						&:nth-child(1)
+							margin-right: 40px
+				.mid-info-mob
+					width: 30%
+					font-size: 20px
+					margin-top: -120px
+					margin-right: 50px
+					>span
+						font-size: 80px
+
+
+.btn
+	background-color: #f47032
+	text-transform: uppercase
+	font-size: 20px
+	padding: 30px 35px
+	box-shadow: 1px 3px 15px #555
+	&:hover
+		box-shadow: 0px 0px 5px #555
+
 
 	
