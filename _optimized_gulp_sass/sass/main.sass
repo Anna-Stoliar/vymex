@@ -6,8 +6,7 @@
 @import "app/libs/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/scss/fa-brands"
 @import "app/libs/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/scss/fa-regular"
 @import "app/libs/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/scss/fa-solid"
-
-
+@import "app/libs/slick-1.8.1/slick/slickk.scss"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -301,6 +300,134 @@ h1
 
 
 //main
+.arrow-left, .arrow-right
+	position: absolute
+	font-size: 62px
+	top: calc(50% - 31px)
+	color: #7f7f7f
+
+.arrow-left
+	left: -33px
+.arrow-right
+	right: -33px
+
+
+.audit
+	.page-wrap-p
+		display: flex
+		align-items: center
+		flex-direction: column
+		h1
+			margin-bottom: 70px
+		.sliderr
+			width: 90%
+			.slick
+				.itm
+					display: flex
+					flex-direction: column
+					outline: none!important
+					padding: 0
+					width: 25wv!important
+					margin: 0 2.5vw
+					box-shadow: -1px 3px 15px #5a9fe0
+					border-radius: 7px
+					overflow: hidden
+					margin-bottom: 20px
+					margin-top: 20px
+					&:hover
+						img
+							display: none
+						.audit-itm-h
+							display: flex
+							transition: all 0.5s ease
+						>p
+							font-size: 28px
+							&:before
+								height: 0px
+					img
+						width: 120%
+						margin-left: -20%
+						height: auto
+					>p
+						text-align: center
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						margin: 65px 0 60px
+						font-size: 1.3vw
+						color: #5b5b5b
+						font-family: "AvenirNextCyrSemiBold", sans-serif
+						font-weight: 600
+						position: relative
+						&:before
+							content: ''
+							width: 40%
+							height: 1px
+							left: 30%
+							position: absolute
+							bottom: -20px
+							background-color: #5b5b5b
+					.audit-itm-h
+						display: none
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						transition: all 0.5s ease
+						.audit-itm-btn
+							width: 60%
+							margin: 40px 0 50px
+							border: 3px solid #5a9fe0
+							color: #5a9fe0
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							text-align: center
+							text-transform: uppercase
+							&:hover
+								background-color: #5a9fe0
+								color: #fff
+						p
+							display: flex
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							margin: 0 50px
+							text-align: center
+		.audit-steps
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			align-items: center
+			margin-top: 50px
+			.audit-step
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				position: relative
+				width: 15vw
+				margin: 0 2%
+				p
+					position: absolute
+					width: 100%
+					height: 17px
+					left: 0
+					position: absolute
+					bottom: -20px
+					background-color: #e2e2e2
+				span 
+					color: #e2e2e2
+				i
+					color: #e2e2e2
+					font-size: 20px
+		h3
+			color: #5a9fe0
+			text-align: center
+			font-size: 24px
+			margin-top: 50px
+
+
 .services
 	background-image: url(../img/section3/logo-r.png)
 	background-repeat: no-repeat
