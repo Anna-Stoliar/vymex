@@ -13,7 +13,6 @@ $(".lang-en").click(function() {
 var slickOptions = {
 	centerMode: false,
 	infinite: false,
-	initialSlide: 1,
 	responsive: [
 	{
       breakpoint: 19200,
@@ -71,4 +70,5 @@ $(".audit-btn-four").click(function() {
 	$('.audit-step-four i').css('color', '#76c665');
 	$('.audit-step-four p').css('background-color', '#f47032');
 });
+
 
