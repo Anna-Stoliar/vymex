@@ -228,8 +228,12 @@ header
 	color:  #fff!important
 
 .main
-	margin-top: 5vh
 	margin-left: 15px
+	display: flex
+	height: 70vh
+	flex-direction: column
+	justify-content: center
+
 	.main-bg
 		.bg-one
 			position: absolute
@@ -253,6 +257,9 @@ header
 		font-weight: 800!important
 		text-transform: uppercase
 		width: 55%
+		display: flex
+		flex-direction: column
+		justify-content: center
 		>div
 			font-size: 2.1vw
 		p
@@ -264,7 +271,9 @@ header
 		padding-left: 70px
 		height: 250px
 		width: 400px
-		position: relative
+		position: absolute
+		bottom: 50px
+		z-index: -1
 		p
 			color: #dadada
 			width: 100%
@@ -282,9 +291,9 @@ header
 			text-decoration: none
 			padding: 20px 75px
 			box-shadow: 1px 3px 15px #000
-			font-size:  28px
+			font-size:  1.5vw
 			left: 0
-			bottom: 95px
+			bottom: 5vh
 			&:hover
 				box-shadow: 0px 0px 5px #000
 
