@@ -9,6 +9,21 @@ $(".lang-en").click(function() {
 	$('.lang-en').addClass('active');
 });
 
+var os = document.getElementById("logo").offsetHeight;
+$(document).ready(function() {
+	if (window.innerWidth < 1151) {
+		$('.top-auth').css('margin-left', os + 40);
+	}
+});
+
+$(window).resize(function(){
+	if (window.innerWidth < 1151) {
+		$('.top-auth').css('margin-left', os + 40);
+	}
+	if (window.innerWidth > 1150) {
+		$('.top-auth').css('margin-left', '20px');
+	}
+});
 
 var slickOptions = {
 	centerMode: false,
