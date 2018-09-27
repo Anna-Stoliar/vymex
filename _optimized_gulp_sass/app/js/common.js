@@ -205,4 +205,25 @@ var comf3 = canvas.getContext("2d");
 	comf3.strokeStyle = "#00aeef";
 	comf3.stroke();
 
+function changeLink(elmnt) {
+	var i, tablinks;
+
+    tablinks = document.getElementsByClassName("menu-m-itm");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("menu-a");
+    }
+
+    elmnt.classList.add("menu-a");
+}
+
+function changePage(elmnt) {
+	var i, tablinks;
+
+    tablinks = document.getElementsByClassName("page");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("page-a");
+    }
+
+    elmnt.classList.add("page-a");
+}
 
