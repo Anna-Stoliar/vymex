@@ -86,6 +86,7 @@ $(".audit-btn-four").click(function() {
 	$('.audit-step-four p').css('background-color', '#f47032');
 });
 
+
 function drawl(){
 	var canvas = document.getElementById("myCan");
 	var ctx = canvas.getContext("2d");
